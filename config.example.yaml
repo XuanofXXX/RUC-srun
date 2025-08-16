@@ -1,0 +1,26 @@
+# 人民大学校园网认证配置示例
+# 复制此文件为 config.yaml 并填入真实凭据
+# config.yaml 已被 .gitignore 排除，不会被提交到版本控制
+
+# 用户凭据
+username: "你的学号"
+password: "你的密码"
+
+# 可选配置
+ac_id: "1"              # 认证点ID，通常为1
+ip: null                # 本机IP，留空则自动获取
+
+# 设备信息
+device:
+  name: "Windows 10"
+  platform: "Windows"
+
+# 日志配置
+logging:
+  level: "INFO"         # 日志级别: DEBUG, INFO, WARNING, ERROR
+  file_enabled: true    # 是否写入日志文件
+
+# 保活配置
+keepalive:
+  interval: 300         # 检查间隔（秒），默认5分钟
+  retry_delay: 60       # 失败重试延迟（秒）
